@@ -1,79 +1,299 @@
-<!docktype html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <title> Sign UP </title>
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+<div id="demo"></div>
+<meta charset="utf-8">
+<title>  Matathon 2017 </title>
+<link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="nivo-slider/default/default.css" type="text/css" media="screen" /><link rel="stylesheet" href="nivo-slider/default/nivo-slider.css" type="text/css" media="screen" />
 
-<style>
-img.normal {
-    height: auto;
-}
+</head>
 
-img.big {
-    height: 120px;
-}
-
-p.ex {
-    height: 100px;
-    width: 100px;
-}
-</style>
-  </head>
 <body>
-<nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Home</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="leaderboard.html" class="waves-effect waves-light btn">LEADERBOARD</a></li>
-        <li><a href="Qustion.html" class="waves-effect waves-light btn">QUESTIONS</a></li>
-        <li><a href="rules.html"  class="waves-effect waves-light btn">RULES</a></li>
-            <li><a href="" class="waves-effect waves-light btn">REGISTRATION</a></li>
-      </ul>
-    </div>
-  </nav>
 
- <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="image/poster.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-    <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Contacts</h5>
-               <ul>
-                <li> <a href="https://www.facebook.com/events/1870999396506094/?notif_t=plan_user_associated&notif_id=1489642094827410"><img src="fb.jpg" width="32" height="32" alt="facebook"></a></li>
-               <li><h6>email : matathon2017@gmail.com</h6></li>
-                 
-                </ul>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">ORGNISERS</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/ramnarayan.mishra.522">Ram Naryan Mishra</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/arunav.bhatnagar">Arunav Bhatnagar</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-           
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
-  </body>
-  </html>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("march 24, 2017 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML ="Timer : " + days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+	document.getElementById("demo").style.textAlign = "right";
+	document.getElementById("demo").style.fontSize = "xx-large";
+}, 1000);
+</script>
+
+<h1 align="middle">
+				 MATATHON-2017 </h1>
+	<header>
+		<div class="container" >
+			<a href="https://aparoksha.iiita.ac.in/">
+				 <h2> Aparoksha'17 </h2> </a>			
+				<a href="https://iiita.ac.in/">
+				 <h1 align="right"> IIITA </h1> </a>
+				  
+			<nav>
+				<ul class="last">
+					<li class="active">
+						<a href="#">Home</a></li> 
+					<li>
+						<a href="rules.html">Rules</a></li>
+					<li>
+						<a href="Question.html">Questions</a></li>
+					<li>
+						<a href="leaderboard.html">Leaderboard</a></li>
+						<li>
+						<a href="https://goo.gl/yVvBWt">Registration</a></li>
+				</ul></nav></div>
+	</header>
+	<span class="clearfix"></span>
+	<section id="slider_wrapper" class="container">
+		<div  class="container"> 
+			<img src="image\poster.jpg"  width="950" height="380" />
+		</div>
+
+	</section>
+	<span class="clearfix"></span>
+	<section id="three_parags">
+		<div class="container">
+			<div >
+			
+			
+			
+			
+				<h2> MATATHON 2017 </h2>
+				<h3>About The Event :- </h3>
+				<p>It is a Matlab coding competition for 36 hours consisting of Five Questions , which will be uploaded(either mailed or uploaded on event page) at 0th , 4th , 12th , 20th , 28th hr. First question would be an easy one and then the difficulty level would vary accordingly. <strong>Top 3 Contestants will get exciting prizes. </strong></p>
+				
+				
+				
+			</div>
+		<span class="clearfix"></span>
+	</section>
+	
+	<span class="clearfix"></span>
+	<section id="three_parags">
+		<div class="container">
+				<h1> Organizers: </h1>	
+				
+				<a href="https://www.facebook.com/ramnarayan.mishra.522">
+				<h2>Ram Narayan Mishra (IEC2014094)</h2> </a>
+				<a href="https://iiita.ac.in/">
+                <h2>   Arunav (IEC2015084)   </h2></a>
+				
+				<h1> Volunteers: </h1>	
+				
+				<a href="https://www.facebook.com/arunav.bhatnagar">
+				<h2>Vinit Roy  (7706894007)</h2> </a>
+               
+			</div>
+		<span class="clearfix"></span>
+	</section>
+	
+
+	<span class="clearfix"></span>
+	<footer>
+		<div id="top">
+			<div class="container">
+				<div id="footer_logo" class="span-8">logo</div>
+				<div id="social_icons" class="span-8">
+					<h2>Othre Event Page</h2>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/events/1870999396506094/?notif_t=plan_user_associated&notif_id=1489642094827410"><img src="image/SOCIAL-ICON_03.jpg" width="32" height="32" alt="facebook"></a></li>
+						
+					</ul>
+				</div>
+				<div id="in_touch" class="span-8 last">
+					<h2>Contacts</h2>
+					<p>
+						<b>email </b> : matathon2017@gmail.com<br>
+						<b>Mobile </b> : 8601867011 |
+				</div></div>
+		</div>
+		
+	</footer>
+ <script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<div id="demo"></div>
+<meta charset="utf-8">
+<title>  Matathon 2017 </title>
+<link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="nivo-slider/default/default.css" type="text/css" media="screen" /><link rel="stylesheet" href="nivo-slider/default/nivo-slider.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("march 24, 2017 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML ="Timer : " + days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+	document.getElementById("demo").style.textAlign = "right";
+	document.getElementById("demo").style.fontSize = "xx-large";
+}, 1000);
+</script>
+
+<h1 align="middle">
+				 MATATHON-2017 </h1>
+	<header>
+		<div class="container" >
+			<a href="https://aparoksha.iiita.ac.in/">
+				 <h2> Aparoksha'17 </h2> </a>			
+				<a href="https://iiita.ac.in/">
+				 <h1 align="right"> IIITA </h1> </a>
+				  
+			<nav>
+				<ul class="last">
+					<li class="active">
+						<a href="#">Home</a></li> 
+					<li>
+						<a href="rules.html">Rules</a></li>
+					<li>
+						<a href="Question.html">Questions</a></li>
+					<li>
+						<a href="leaderboard.html">Leaderboard</a></li>
+						<li>
+						<a href="https://goo.gl/yVvBWt">Registration</a></li>
+				</ul></nav></div>
+	</header>
+	<span class="clearfix"></span>
+	<section id="slider_wrapper" class="container">
+		<div  class="container"> 
+			<img src="image\poster.jpg"  width="950" height="380" />
+		</div>
+
+	</section>
+	<span class="clearfix"></span>
+	<section id="three_parags">
+		<div class="container">
+			<div >
+			
+			
+			
+			
+				<h2> MATATHON 2017 </h2>
+				<h3>About The Event :- </h3>
+				<p>It is a Matlab coding competition for 36 hours consisting of Five Questions , which will be uploaded(either mailed or uploaded on event page) at 0th , 4th , 12th , 20th , 28th hr. First question would be an easy one and then the difficulty level would vary accordingly. <strong>Top 3 Contestants will get exciting prizes. </strong></p>
+				
+				
+				
+			</div>
+		<span class="clearfix"></span>
+	</section>
+	
+	<span class="clearfix"></span>
+	<section id="three_parags">
+		<div class="container">
+				<h1> Organizers: </h1>	
+				
+				<a href="https://www.facebook.com/ramnarayan.mishra.522">
+				<h2>Ram Narayan Mishra (IEC2014094)</h2> </a>
+				<a href="https://iiita.ac.in/">
+                <h2>   Arunav (IEC2015084)   </h2></a>
+				
+				<h1> Volunteers: </h1>	
+				
+				<a href="https://www.facebook.com/arunav.bhatnagar">
+				<h2>Vinit Roy  (7706894007)</h2> </a>
+               
+			</div>
+		<span class="clearfix"></span>
+	</section>
+	
+
+	<span class="clearfix"></span>
+	<footer>
+		<div id="top">
+			<div class="container">
+				<div id="footer_logo" class="span-8">logo</div>
+				<div id="social_icons" class="span-8">
+					<h2>Othre Event Page</h2>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/events/1870999396506094/?notif_t=plan_user_associated&notif_id=1489642094827410"><img src="image/SOCIAL-ICON_03.jpg" width="32" height="32" alt="facebook"></a></li>
+						
+					</ul>
+				</div>
+				<div id="in_touch" class="span-8 last">
+					<h2>Contacts</h2>
+					<p>
+						<b>email </b> : matathon2017@gmail.com<br>
+						<b>Mobile </b> : 8601867011 |
+				</div></div>
+		</div>
+		
+	</footer>
+ <script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>
