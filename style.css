@@ -101,14 +101,14 @@ footer #top {
 	width: 100%;
 	border-top-width: 5px;
 	border-top-style: solid;
-	border-top-color: #B7F9AA;
-	background:-moz-linear-gradient(#484848,#333333);
+	border-top-color: #F0DDF9;
+	/*background:-moz-linear-gradient(#484848,#333333);
 	background:-webkit-linear-gradient(#484848,#333333);
 	background:-o-linear-gradient(#484848,#333333);
 	background:-ms-linear-gradient(#484848,#333333);
 	background:linear-gradient(#484848,#333333);
 	margin-top:20px;
-	padding-top:10px;
+	padding-top:10px;*/
 }
 footer #top #footer_logo {
 	text-indent:-22222px;
