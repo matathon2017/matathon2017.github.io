@@ -25,37 +25,18 @@ th {
     background-color: #4CAF50;
     color: white;
 }
-  .container1 {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-}
-
-.container1 a {
-    float: center;
-    font-size: 16px;
+ .dropbtn {
+    background-color: #4CAF50;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown {
-    float: right;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-}
-
-.container1 a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
@@ -68,20 +49,20 @@ th {
 }
 
 .dropdown-content a {
-    float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: center;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
+.dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
-    display: blue;
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 </style>
   </head>
@@ -107,18 +88,15 @@ th {
   <tr>
     <td>0</td>
     <td><a href="sample.pdf" class="waves-effect waves-light btn">Sample Question</a></td>
-  <td> <div class="container1">
-  
-  <div class="dropdown">
-    <button class="dropbtn">Submit</button>
-    <div class="dropdown-content">
-      <a href="https://goo.gl/forms/ZHkkr2uVfKQzqyYr1">IIIT-Allahabad</a>
-      <a href="https://www.cognitoforms.com/AparokshaIIITAllahabad/Matathon2017Submission">Other-College</a>
-    
-    </div>
-  </div> 
+  <td>
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="https://goo.gl/forms/ZHkkr2uVfKQzqyYr1">Link 1</a>
+    <a href="https://www.cognitoforms.com/AparokshaIIITAllahabad/Matathon2017Submission">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
 </div>
-
    </td>
    
   </tr>
